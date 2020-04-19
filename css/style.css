@@ -242,7 +242,6 @@ transition: all 0.3s ease-in-out;
 .pr_box {
     width: 345px;
     height: 345px;
-    border: 10px solid #ff8c00;
     position: absolute;
     top: 40px;
     left: 175px;
@@ -369,7 +368,7 @@ z-index: 9999;
 
     width: 220px;
     height: 220px;
-    border: 6px solid #ff8c00;
+    /* border: 6px solid #ff8c00; */
     position: absolute;
     top: 60px;
     left: 50px;
@@ -494,7 +493,9 @@ top: 30px;
     -webkit-text-fill-color: white;
     line-height: 200px;
     position: absolute;
-
+    margin: auto;
+    left: 0;
+    right: 0;
 z-index: -1;
 }
 .service_title h2 {
@@ -624,4 +625,296 @@ z-index: -1;
 
     margin-bottom: 30px;
 
+}
+.jobs_wrap .sc_backdrop {
+    font-size: 240px;
+    top: 50px;
+}
+.jobs_slider {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+.job_slide_wrap {
+    display: flex;
+}
+
+.job_slide_wrap .job_half {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.job_half.job_inf {
+    margin-top: 200px;
+}
+.job_half.job_inf {
+    margin-top: 200px;
+    height: 500px;
+    background: #ff8c00;
+    color: #fff;
+    padding: 40px;
+    position: relative;
+}
+.ji_top h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.ji_top h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+.ji_cont {
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    top: 48%;
+}
+.ji_btm {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.btn.btn_default {
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid;
+    border-radius: 0;
+    padding: 10px 40px;
+    font-size: 18px;
+}
+.btn.btn_default.brd {
+    font-weight: 700;
+    border: 2px solid #ff8c00;
+    border-radius: 0;
+    padding: 10px 40px;
+    font-size: 18px;
+    color: #ff8c00;
+}
+.jobs_slider .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+.jobs_slider .swiper-pagination-bullets {
+    width: auto;
+    left: -125px;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+.jobs_slider {
+    margin-bottom: 100px;
+}
+.enq_add_wrap.row {
+    padding: 0 50px;
+}
+.add_box {
+    background: #ff8c00;
+    color: #fff;
+    padding: 40px 35px 20px;
+    font-weight: 300;
+}
+.add_box h3 {
+    font-weight: 700;
+}
+.addr_info {
+    margin-bottom: 25px;
+}
+.add_bottom {
+    display: flex;
+    margin-top: 40px;
+}
+.add_bottom > div {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.add_sc {
+    text-align: right;
+}
+.add_lg img{
+    width: 185px;
+}
+.add_social a i {
+    font-size: 30px;
+    margin-left: 5px;
+    color: #fff;
+}
+.add_sc {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.add_in input[type="text"], .add_in input[type="email"] {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px 0 5px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    color: #666;
+}
+.add_in textarea {
+    height: 100px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #999;
+    color: #666;
+    resize: none;
+}
+.add_in.add-sbmt.text-center {
+    margin-top: 40px;
+}
+.add_enq {
+    margin-bottom: 20px;
+}
+.cont_map .sc_backdrop {
+    top: 60px;
+}
+.map_holder iframe {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0;
+}
+.map_holder {
+
+    margin-top: -80px;
+    border-top: 2px solid #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+    margin-bottom: 40px;
+}
+.bx_tp, .bx_bt {
+    height: 10px;
+    display: block;
+    width: 100%;
+    background: #ff8c00;
+    position: absolute;
+    -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  width: 0;
+}
+.bx_lt, .bx_rt {
+    height: 100%;
+    display: block;
+    width:10px;
+    background: #ff8c00;
+    position: absolute;
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    height: 0;
+}
+.bx_rt{
+    -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+.bx_tp {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+.bx_lt {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s;
+}
+.bx_bt {
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+.bx_tp {
+    top: 0;
+    right: 0;
+}
+.bx_bt {
+    bottom: 0;
+    left: 0;
+}
+.bx_lt {
+    top: 0;
+    left: 0;
+}
+.bx_rt {
+    bottom: 0;
+    right: 0;
+}
+.px_plus {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.swiper-slide-active .bx_rt,
+.swiper-slide-active .bx_lt {
+    
+    height: 100%;
+}
+.swiper-slide-active .bx_tp,
+.swiper-slide-active .bx_bt {
+    width: 100%;
+}
+.pr_box.hs .bx_lt, .pr_box.hs .bx_rt {
+    width: 6px;
+}
+.pr_box.hs .bx_tp, .pr_box.hs .bx_bt {
+    height: 6px;
+}
+.hs .px_plus::after {
+    top: -34px;
+    border-bottom: 0;
+    border-top: 10px solid #fff;
+}
+.hs .px_plus {
+    position: absolute;
+    right: 6px;
+    bottom: 0px;
+}
+.hslider.swiper-container-initialized.swiper-container-horizontal {
+    position: relative;
+    top: 150px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.swiper-slide.swiper-slide-active .hslider.swiper-container-initialized.swiper-container-horizontal {
+    top: 0;
+    opacity: 1;
+}
+.hslide_content {
+    top: -150px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.swiper-slide.swiper-slide-active .hslide_content {
+    top: 0;
+    opacity: 1;
+}
+.hslidetitle h2 {
+    right: -100px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
+.swiper-slide.swiper-slide-active .hslidetitle h2 {
+    right: 0;
+    opacity: 1;
+}
+
+.hslidetitle p, .hslidetitle  a {
+    top: -40px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.5s;
+    position: relative;
+}
+.swiper-slide-active .hslidetitle p, 
+.swiper-slide-active .hslidetitle  a {
+    top: 0;
+    opacity: 1;
+}
+.hslide_vid {
+    right: -100px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 1s;
+}
+
+.swiper-slide-active  .hslide_vid {
+    right: 0;
+    opacity: 1;
+}
+.addform {
+    padding-top: 60px;
 }

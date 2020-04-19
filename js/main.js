@@ -7,7 +7,7 @@ const player = new Plyr('#player', {captions: {active: true}, controls: false});
 $(document).ready(function(){
 
     //animation
-    AOS.init();
+    
     
     // Menu toggle
     $('.menu_toggle').click(function(){
@@ -46,16 +46,41 @@ $(document).ready(function(){
           el: '.swiper-pagination',
           clickable: true,
         },
+        on: {
+            slideChange: function () {
+                $('.aos-init').removeClass('aos-init').removeClass('aos-animate');
+              },
+              slideChangeTransitionEnd: function () {
+                AOS.refreshHard();
+              },
+
+        }
     });
+    AOS.init();
     // vswiper.on('slideChange', function () {
-    //     AOS.refresh();
-    //   })
+    //     AOS.init();
+       
+    //   });
     //horizontal slider
     var hswiper = new Swiper('.hslider', {
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+      });
+
+    ///job_slider
+    // var menu = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 3', 'Slide 3'];
+      var swiper = new Swiper('.job_swiper', {
+          effect: 'fade',
+        pagination: {
+          el: '.job_dots',
+          clickable: true,
+        },
+        navigation: {
+            nextEl: '.job-next',
+            prevEl: '.job-prev',
+           },
       });
 
       
