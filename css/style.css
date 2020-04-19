@@ -750,6 +750,7 @@ z-index: -1;
     border: 0;
     border-bottom: 1px solid #999;
     color: #666;
+    outline: none;
 }
 .add_in textarea {
     height: 100px;
@@ -757,6 +758,7 @@ z-index: -1;
     border: 0;
     border-bottom: 1px solid #999;
     color: #666;
+    outline: none;
     resize: none;
 }
 .add_in.add-sbmt.text-center {
@@ -918,3 +920,6 @@ z-index: -1;
 .addform {
     padding-top: 60px;
 }
+html {
+    scroll-behavior: smooth;
+  }
