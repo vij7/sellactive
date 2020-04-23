@@ -43,7 +43,8 @@ $(document).ready(function(){
         spaceBetween: 30,
         mousewheel: {
             releaseOnEdges: true,
-            // eventsTarget: '.hslide_wrap'
+            sensitivity: 30,
+            eventsTarget: '.hslide_wrap'
         },
         pagination: {
           el: '.swiper-pagination',
