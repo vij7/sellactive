@@ -43,7 +43,7 @@ $(document).ready(function(){
         spaceBetween: 30,
         mousewheel: {
             releaseOnEdges: true,
-            sensitivity: 30,
+            sensitivity: 3000,
             eventsTarget: '.hslide_wrap'
         },
         pagination: {
