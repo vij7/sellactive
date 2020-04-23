@@ -41,7 +41,10 @@ $(document).ready(function(){
         direction: 'vertical',
         slidesPerView: 1,
         spaceBetween: 30,
-        // mousewheel: true,
+        mousewheel: {
+            releaseOnEdges: true,
+            // eventsTarget: '.hslide_wrap'
+        },
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
