@@ -4,6 +4,8 @@
 
 const player = new Plyr('#player', {captions: {active: true}, controls: false});
 
+
+
 $(document).ready(function(){
 
     //animation
@@ -97,3 +99,12 @@ $(document).ready(function(){
       
     
 })
+
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 100) {
+      $('.main_header').addClass('fixed');
+  }
+  else {
+      $('.main_header').removeClass('fixed');
+  }
+});
