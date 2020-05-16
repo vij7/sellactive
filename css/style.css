@@ -1155,6 +1155,126 @@ body:not(.fp-viewing-1) .ps_overlay {
 }
 
 /* MQ */
+@media only screen and (max-width:1440px){
+    .project_logo {
+        width: 140px;
+        top: 15px;
+    }
+    .hslider-in {
+        top: 40%;
+    }
+    .hslide_vid {
+        bottom: 120px;
+    }
+}
+/* 1440e */
+@media only screen and (max-width:1366px){
+    .hslidetitle h2 {
+        font-size: 62px;
+    }
+    .pr_box.hs {
+        width: 190px;
+        height: 190px;
+    }
+    .jobs_slider {
+        max-width: 920px;
+    }
+    .job_half.job_inf {
+        height: 440px;
+        padding: 20px 40px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        padding: 10px 15px;
+    }
+    .ji_top h2 {
+        font-size: 50px;
+    }
+    .ji_cont {
+        top: 40%;
+        padding-right: 40px;
+    }
+}
+
+/* 1366e */
+@media only screen and (max-width:1280px){}
+@media only screen and (max-width:1200px){}
+@media only screen and (max-width:1100px){}
+
+@media only screen and (max-width:1024px){
+    .pre_text h2 {
+        font-size: 50px;
+    }
+    .pr_box {
+        width: 260px;
+        height: 260px;
+        top: -20px;
+        left: 200px;
+    }
+    .pre_subtext {
+        margin-left: 490px;
+    }
+    .projectslider img {
+        height: calc(100vh - 69px);
+    }
+    .hslidetitle h2 {
+        font-size: 42px;
+        padding-top: 50px;
+    }
+    .hslidetitle h4 {
+        font-size: 12px;
+        left: 225px;
+        top: 20px;
+    }
+    .pr_box.hs {
+        width: 160px;
+        height: 160px;
+        top: 20px;
+    }
+    .hslide_vid {
+        bottom: 20px;
+    }
+    .hslider-in {
+        top: 50%;
+    }
+    .sc_backdrop {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    .service_title h2 {
+        font-size: 50px;
+        padding: 60px 0;
+    }
+    .lstgn_title {
+        padding: 100px 0;
+    }
+    .vslide_inner {
+        padding-top: 0;
+    }
+    .jobs_wrap {
+        padding: 120px 0;
+    }
+    .jobs_slider {
+        margin-bottom: 120px;
+    }
+    .map_holder {
+        margin-top: -140px;
+    }
+    .mapsection .service_title h2 {
+        padding-bottom: 160px;
+        padding-top: 160px;
+    }
+    .mapsection .sc_backdrop {
+        line-height: 360px;
+    }
+    .scroll_2, .scroll_down {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width:992px){}
+@media only screen and (max-width:800px){}
 
 @media only screen and (max-width:768px){
     .active .main_menu li {
@@ -1187,16 +1307,144 @@ body:not(.fp-viewing-1) .ps_overlay {
         margin-top: 10px;
         font-size: 16px;
     }
+    .projectslider img {
+        height: calc(50vh - 69px);
+    }
+    .hslider-in {
+        top: 0;
+        transform: none;
+    }
+    .swiper-slide.swiper-slide-active .hslide_content {
+        top: auto;
+        opacity: 1;
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+        position: relative;
+        height: 50vh;
+    }
+    .hslide_nav {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    #pslider .swiper-button-next, #pslider  .swiper-button-prev {
+        padding: 10px 15px;
+        color: #fff;
+    }
+    .service_showcase {
+        height: 400px;
+    }
+    .showcase_1 .ssc_img {
+        height: 94%;
+        top: -15%;
+        left: 12%;
+    }
+    .ssc_title .service_backdrop.bordertext {
+        font-size: 50px;
+    }
+    .ssc_title.tl-right .service_backdrop.bordertext {
+        right: 20px;
+        bottom: 10px;
+    }
+    .ssc_title h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .ssc_title h2 {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .ssc_title.tl-right {
+        padding-right: 30px;
+        padding-bottom: 22px;
+    }
+    .ssc_title.tl-left .service_backdrop.bordertext {
+        left: 15px;
+        bottom: 10px;
+    }
+    .ssc_title.tl-left {
+        left: 0;
+        padding-left: 30px;
+        padding-bottom: 22px;
+    }
+    .job_slide_wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .job_half.job_inf {
+        margin-top: 0;
+        margin-left: 30%;
+    }
+    .job_slide_wrap .job_half {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .job_half.job_inf {
+        margin-top: 0;
+        margin-left: 0;
+        padding-top: 60px;
+        margin-left: 200px;
+    }
+    .job_half img {
+        padding-right: 0;
+        width: 100%;
+        height: 440px;
+        object-fit: cover;
+    }
+    .jobs_slider .swiper-pagination-bullets {
+        left: 0;
+        bottom: auto;
+        top: calc(50% + 20px);
+    }
+    .enq_add_wrap.row > div {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .enq_add_wrap.row {
+        padding: 0 0px;
+        flex-direction: column-reverse;
+    }
+    .col-md-7.enq_addform {
+        margin-bottom: 50px;
+    }
+    .lstgn_title {
+        padding: 50px 0;
+    }
+    .service_sections {
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+    .foot-menu li a {
+        padding: 0 15px;
+        font-size: 12px;
+    }
+    .foot_logo img {
+        width: 200px;
+        margin-bottom: 40px;
+    }
+    .copy {
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    .foot-menu ul {
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
 }
+
+
 
 @media only screen and (max-width:440px){
     .pre_text h2 {
         font-size: 22px;
     }
     .pr_box {
-        width: 120px;
-        height: 120px;
-        top: 32px;
+        width: 130px;
+        height: 130px;
+        top: 15px;
     }
     .bx_tp, .bx_bt {
         height: 5px;
@@ -1214,7 +1462,197 @@ body:not(.fp-viewing-1) .ps_overlay {
         height: 5px;
     }
     .pre_subtext h4 {
-        margin-top: 24px;
+        margin-top: 18px;
         font-size: 12px;
     }
+    .vid_play {
+        width: 70px;
+        height: 70px;
+    }
+    .logo_wrap img {
+        width: 140px;
+    }
+    .menu_bar {
+        top: 40px;
+    }
+    .project_logo {
+        width: 80px;
+        top: 5px;
+    }
+    .hslidetitle {
+        padding: 0 4%;
+    }
+    .pr_box.hs {
+        width: 120px;
+        height: 120px;
+        top: 40px;
+        left: 3%;
+    }
+    .hslidetitle h2 {
+        font-size: 28px;
+        padding-top: 65px;
+    }
+    .hslidetitle h4 {
+        font-size: 10px;
+        left: 140px;
+        top: 38px;
+    }
+    .hslidetitle p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+    .v-slider {
+        min-height: auto !important;
+        height: 732px !important;
+    }
+    .project_logo {
+        top: 20px;
+        position: relative;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        padding-right: 3%;
+    }
+    .project_logo img {
+        width: 100px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .hslider-in {
+        top: 0;
+        transform: none;
+        position: relative;
+    }
+    .hslide_wrap {
+        height: 860px;
+    }
+    .v-slider {
+        min-height: auto !important;
+        height: 860px !important;
+    }
+    /* .v-slider .swiper-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 732px !important;
+    } */
+    .swiper-slide-active .hslide_vid {
+        right: 0;
+        opacity: 1;
+        position: relative;
+        left: auto;
+        display: block;
+        text-align: right;
+        padding-right: 3%;
+    }
+    .swiper-slide.swiper-slide-active .hslide_content {
+        height: auto;
+    }
+    .pre_subtext {
+        margin-left: 180px;
+    }
+    .service_showcase {
+        height: 460px;
+        padding: 70px 0px 80px;
+    }
+    .sc_backdrop {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .service_title h2 {
+        font-size: 26px;
+        padding: 18px 0;
+    }
+    .ssc_button {
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .ssc_box {
+        width: 80%;
+    }
+    .showcase_1 .ssc_img {
+        height: 100%;
+        top: -18%;
+        left: 0%;
+    }
+    .ssc_title .service_backdrop.bordertext {
+        font-size: 40px;
+    }
+    .ssc_btn {
+        position: absolute;
+        bottom: -60px;
+        right: 0 !important;
+        width: 100%;
+        left: 0 !important;
+    }
+    .ssc_title h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .service_sections {
+        padding-bottom: 20px;
+    }
+    .ssc_title {
+        position: absolute;
+        width: 100%;
+    }
+    .jobs_slider .swiper-pagination-bullets {
+        display: none;
+    }
+    .job_half.job_inf {
+        margin-left: 0;
+    }
+    .ji_top h2 {
+        font-size: 30px;
+    }
+    .ji_top h4 {
+        font-size: 18px;
+    }
+    .ji_cont {
+        top: 32%;
+    }
+    .ji_cont {
+        font-size: 16px;
+    }
+    .ji_btm {
+        position: absolute;
+        right: 0;
+        bottom: 40px;
+        width: calc(100% - 80px);
+        left: 0;
+        margin: auto;
+    }
+    .btn.btn_default {
+        width: 100%;
+    }
+    .jobs_wrap .sc_backdrop {
+        font-size: 130px;
+        top: 22px;
+    }
+    .jobs_wrap {
+        padding: 60px 0;
+    }
+    .addform {
+        padding-top: 0;
+    }
+
+    .mapsection .service_title h2 {
+        padding-bottom: 10px;
+        padding-top: 80px;
+    }
+    .map_holder {
+        margin-top: 0;
+    }
+    .mapsection .sc_backdrop {
+        line-height: 200px;
+    }
+    .foot-menu li a {
+        padding: 0 10px;
+    }
 }
+
+@media only screen and (max-width:400px){
+
+}
+
+@media only screen and (max-width:360px){}

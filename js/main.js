@@ -27,6 +27,8 @@ $(document).ready(function(){
       el: '.swiper-pagination',
       clickable: true,
     },
+    
+   
     on: {
         reachBeginning : function () {
           AOS.refreshHard();
@@ -71,7 +73,9 @@ vswiper.mousewheel.disable();
 		  // scrollOverflowReset: true,
       afterLoad: function(origin){
         setTimeout(function(){ 
+          if($(window).width() > 1024){
           vswiper.mousewheel.enable();
+          }
          }, 1500);
         if(origin.index == 1 || origin.index == 2){
           // alert(0);
@@ -187,9 +191,15 @@ vswiper.mousewheel.disable();
   });
 
 
-  if($(window).width() <= 768){
+  if($(window).width() <= 1024){
     // alert(1);
     fullpage_api.destroy('all');
+    if(vswiper.mousewheel.enabled){
+      // alert('enabled');
+    }
+    else {
+      // alert('disabled');
+    }
     vswiper.mousewheel.disable();
   }
     
