@@ -62,7 +62,7 @@ $(document).ready(function(){
 
     }
 });
-vswiper.mousewheel.disable();
+  //  vswiper.mousewheel.disable();
 
     //Fullpage
     new fullpage('#fullpage', {
@@ -200,9 +200,31 @@ vswiper.mousewheel.disable();
     else {
       // alert('disabled');
     }
-    vswiper.mousewheel.disable();
   }
-    
+
+  const player2 = new Plyr('.grafikVideo', {controls: false});
+
+  $('.grfk_play .vd_play').click(function(e){
+    e.preventDefault();
+    if (player2.paused == false) {
+        player2.pause();
+        player2.muted = true;
+        $('.grfk_play .vd_play').removeClass('playing');
+    } else {
+        player2.play();
+        player2.muted = false;
+        $('.grfk_play .vd_play').addClass('playing');
+        
+    }
+    // if(player.playing == true) {
+    //     $(this).addClass('playing');
+    // }
+    // else {
+    //     // $(this).removeClass('playing');
+    // }
+})
+  
+  
 })
 
 $(window).scroll(function(){

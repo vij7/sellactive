@@ -1,5 +1,5 @@
 /*/////// Theme: Sell Active    ///////*/
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @font-face {
     font-family: 'sansation';
     src: url('fonts/sansation-light-webfont.woff2') format('woff2'), url('fonts/sansation-light-webfont.woff') format('woff');
@@ -146,7 +146,7 @@ html, body {
     height: 100%;
 }
 
-.vid_play {
+.vid_play, .vd_play {
     display: inline-block;
     background: url(../img/play.png) no-repeat center/100% transparent;
     width: 170px;
@@ -160,12 +160,12 @@ html, body {
     transition: all 0.3s ease-in-out;
 }
 
-.vid_play.playing {
+.vid_play.playing, .vd_play.playing {
     background: url(../img/pause.png) no-repeat center/100% transparent;
     opacity: 0;
 }
 
-.vid_play:hover {
+.vid_play:hover, .vd_play {
     opacity: 1;
 }
 
@@ -1490,6 +1490,268 @@ select:-moz-focusring {
 .refrenz_wrap {
     margin-bottom: 50px;
 }
+.pg_title.grafik .sc_backdrop {
+    font-size: 120px;
+}
+.pg_title.grafik .service_title h2 {
+    padding: 100px 0 0;
+}
+.grafik_menubar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pg_title.grafik {
+    padding: 200px 0 50px;
+}
+.grafik_menubar > ul {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+.grafik_menubar > ul li {
+    position: relative;
+}
+.grafik_submenu {
+    position: absolute;
+}
+.grafik_menubar ul li a {
+    font-size: 10px;
+    font-weight: 600;
+    color: #8b8b8b;
+    text-decoration: none !important;
+}
+.grafik_submenu ul li a {
+    font-size: 8px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.grafik_submenu {
+    position: absolute;
+    width: 150px;
+}
+.grafik_submenu ul li {
+    line-height: 12px;
+}
+.grafik_menu {
+    padding-bottom: 200px;
+}
+
+.grafik_menubar > ul li > a + .grafik_submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.grafik_menubar > ul li:hover a + .grafik_submenu {
+    max-height: 200px;
+}
+.grafik_menubar > ul > li > a {
+    position: relative;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.grafik_menubar > ul > li > a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff8c00;
+    transition: all 0.3s ease-in-out;
+}
+.grafik_menubar > ul > li:hover > a::after {
+    width: 100%;
+}
+.gftitle h2 {
+    text-align: center;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #e6e6e6;
+    -webkit-text-fill-color: transparent;
+    line-height: 90px;
+    font-size: 90px;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 130px;
+    -webkit-font-feature-settings: "lnum";
+-moz-font-feature-settings: "lnum";
+font-feature-settings: "lnum";
+}
+.gftitle h2::after {
+    content: "";
+    width: 90%;
+    display: block;
+    min-width: 380px;
+    margin: auto;
+    height: 18px;
+    background: #ff8c00;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.gftitle {
+    text-align: center;
+}
+.grafik_itemwrap {
+    max-width: 1200px;
+    margin: 0 auto 260px;
+}
+.grafik_box {
+    border: 8px solid #ff8c00;
+    padding: 40px;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 130px;
+}
+.grafik_sublist h3 {
+    font-size: 26px;
+    color: #ff8c00;
+    font-weight: 700;
+    margin-bottom: 10px;
+    -webkit-font-feature-settings: "lnum";
+-moz-font-feature-settings: "lnum";
+font-feature-settings: "lnum";
+}
+.grafik_sublist ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.grafik_sublist li a {
+    padding-left: 30px;
+    color: #8b8b89;
+    position: relative;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.grafik_sublist li a::before {
+    content: "";
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background: #ff8c00;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+.grafik_sublist li.active a::before {
+    width: 25px;
+}
+.grafik_sublist li.active a {
+    font-weight: 600;
+    color: #ff8c00;
+}
+.grafik_sublist ul li {
+    margin-bottom: 3px;
+}
+.graik_item_inner {
+    position: relative;
+}
+.grafik_allcontent {
+    width: 950px;
+}
+.grafik_allcontent {
+    width: 950px;
+    position: absolute;
+    right: 0;
+    top: 130px;
+    height: 500px;
+}
+.grafik_itemimage {
+    width: 500px;
+    height: 500px;
+}
+.grafik_infos {
+    width: 450px;
+    padding: 0 50px;
+    align-self: end;
+    position: relative;
+}
+.itemtitle_backdrop {
+    text-align: center;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #e6e6e6;
+    -webkit-text-fill-color: transparent;
+    line-height: 100px;
+    font-size: 100px;
+}
+.grafik_itemtitle {
+    position: absolute;
+    top: -73px;
+    left: -5px;
+}
+.grafik_itemtitle h3 {
+    text-align: right;
+    padding: 0 15px;
+    color: #ff8c00;
+    font-weight: 700;
+    font-size: 78px;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+.allcont_inner {
+    display: flex;
+}
+.grafik_infos::before {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 260px;
+    background: #ff8c00;
+    position: absolute;
+    top: -38px;
+    left: -90px;
+}
+.grafik_infos h4 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ff8c00;
+    -webkit-font-feature-settings: "lnum";
+-moz-font-feature-settings: "lnum";
+font-feature-settings: "lnum";
+}
+.infos_desc {
+    font-weight: 300;
+}
+.grafik_link {
+    padding: 12px 30px;
+    display: block;
+    width: 100%;
+    border: 2px solid #ff8c00;
+    text-align: center;
+    color: #ff8c00 !important;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+.grafik_sublist {
+    margin-top: 80px;
+}
+.grafik_itemimage.grafk_video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    position: relative;
+}
+.grfk_play {
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.grfk_play .vd_play {
+    width: 100px;
+    height: 100px;
+}
 /* MQ */
 
 @media only screen and (max-width:1440px) {
@@ -1562,6 +1824,61 @@ select:-moz-focusring {
     }
     .foot-menu li a {
         padding: 0 20px;
+    }
+    .grafik_itemwrap {
+        max-width: 840px;
+    }
+    .grafik_box {
+        border: 5px solid #ff8c00;
+        padding: 30px;
+        width: 400px;
+        height: 400px;
+    }
+    .grafik_allcontent {
+        width: 640px;
+        top: 120px;
+        height: 420px;
+    }
+    .itemtitle_backdrop {
+        line-height: 75px;
+        font-size: 75px;
+    }
+    .grafik_infos {
+        padding: 0 0 0 30px;
+    }
+    .grafik_itemtitle {
+        top: -50px;
+    }
+    .grafik_itemtitle h3 {
+        font-size: 50px;
+        bottom: -20px;
+    }
+    .grafik_infos::before {
+        height: 5px;
+        top: -10px;
+    }
+    .grafik_sublist li a {
+        font-size: 8px;
+        line-height: 8px;
+    }
+    .grafik_sublist ul li {
+        margin-bottom: 0px;
+    }
+    .grafik_sublist li a::before {
+        height: 6px;
+    }
+    .grafik_sublist ul li {
+        line-height: 12px;
+    }
+    .infos_desc {
+        font-weight: 300;
+        font-size: 11px;
+    }
+    .infos_desc p:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .grafik_itemimage {
+        height: 330px;
     }
 }
 
@@ -1649,6 +1966,40 @@ select:-moz-focusring {
     .bform_main {
         font-size: 50px;
     }
+    .pg_title.grafik .sc_backdrop {
+        font-size: 80px;
+    }
+    .pg_title.grafik .service_title h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .grafik_menubar > ul {
+        flex-wrap: wrap;
+    }
+    .grafik_menubar > ul > li {
+        position: relative;
+        flex-basis: 25%;
+        text-align: center;
+    }
+    .grafik_menubar > ul li a + .grafik_submenu {
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fff;
+        z-index: 99;
+    }
+    .grafik_menu {
+        padding-bottom: 150px;
+    }
+    .gftitle h2 {
+        line-height: 60px;
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+    .gftitle h2::after {
+        min-width: 240px;
+        bottom: 8px;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -1685,6 +2036,56 @@ select:-moz-focusring {
     .refrenx_inner .refrenze_img {
         width: 90px;
         height: 90px;
+    }
+    .grafik_sublist li.active a::before {
+        width: 10px;
+    }
+    .grafik_sublist li a {
+        padding-left: 14px;
+    }
+    .grafik_sublist h3 {
+        font-size: 16px;
+    }
+    .grafik_box {
+        padding: 30px 15px;
+    }
+    .grafik_link {
+        padding: 5px 30px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .grafik_sublist {
+        margin-top: 0px;
+    }
+    .grafik_allcontent {
+        width: calc(100% - 30px);
+        top: 62%;
+    }
+    .itemtitle_backdrop {
+        line-height: 85px;
+        font-size: 75px;
+    }
+    .grafik_box {
+        width: 300px;
+        height: 300px;
+    }
+    .grafik_itemtitle {
+        right: 0;
+        text-align: right;
+    }
+    .itemtitle_backdrop {
+        text-align: right;
+    }
+    .grafik_infos::before {
+        top: -35px;
+        width: 240px;
+    }
+    .grafik_itemimage {
+        height: 365px;
+    }
+    .grafik_itemwrap {
+        margin: 0 auto 340px;
     }
 }
 
@@ -1864,6 +2265,96 @@ select:-moz-focusring {
     .bform_group textarea {
         height: 200px;
     }
+    .grafik_itemimage {
+        width: 98%;
+        height: 350px;
+    }
+    .grafik_itemtitle {
+        top: auto;
+        bottom: -60px;
+    }
+    .grafik_itemimage img {
+        height: 100%;
+    }
+    .itemtitle_backdrop {
+        line-height: 65px;
+        font-size: 44px;
+    }
+    .grafik_itemtitle h3 {
+        font-size: 32px;
+        bottom: -5px;
+    }
+    .grafik_infos {
+        padding: 0;
+    }
+    .allcont_inner {
+        flex-direction: column;
+    }
+    .grafik_itemtitle {
+        top: -25px;
+        bottom: 0;
+        position: relative;
+    }
+    .gftitle h2 {
+        margin-bottom: 50px;
+        margin-top: 220px;
+    }
+    .pg_title.grafik .sc_backdrop {
+        font-size: 50px;
+        line-height: 50px;
+        padding-top: 30px;
+    }
+    .pg_title.grafik {
+        padding: 80px 0 60px;
+    }
+    .pg_title.grafik .service_title h2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .grafik_menubar > ul > li {
+        position: relative;
+        flex-basis: 50%;
+    }
+    .grafik_menu {
+        padding-bottom: 0;
+        margin-bottom: 70px;
+    }
+    
+
+.grafik_infos::before {
+    top: -20px;
+    width: 240px;
+    left: 0;
+}
+.grafik_infos {
+    width: auto;
+    padding-right: 15px;
+}
+.gftitle h2 {
+    line-height: 40px;
+font-size: 35px;
+margin-top: 10px;
+margin-bottom: 50px;
+padding-bottom: 10px;
+}
+.infos_desc {
+    max-height: 178px;
+    overflow: hidden;
+}
+
+.grafik_allcontent {
+    width: calc(100% - 30px);
+    top: -90px;
+    position: relative;
+    left: 30px;
+    height: auto;
+}
+.grafik_box {
+    margin-bottom: 0;
+}
+.grafik_itemwrap {
+    margin: 0 auto 0px;
+}
 }
 
 @media only screen and (max-width:640px) {
