@@ -1873,6 +1873,20 @@ select:-moz-focusring {
 .pos_single_title .sc_backdrop.vlg {
     font-size: 125px;
 }
+.ssc_img .sshover {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+.ssc_img img {
+    transition: all 0.2s ease-in-out;
+}
+/* .ssc_img:hover img {
+    transition-delay: 0.2s;
+} */
+.ssc_img:hover img.sshover {
+    opacity: 1;
+}
 /* MQ */
 
 @media only screen and (max-width:1440px) {
