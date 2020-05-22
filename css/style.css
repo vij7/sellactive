@@ -38,7 +38,7 @@ html, body {
 }
 
 .fixed .header_inner, .inner_page .header_inner {
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 .video_banner {
@@ -62,7 +62,8 @@ html, body {
 }
 
 .fixed .logo_wrap img, .inner_page .logo_wrap img {
-    width: 150px;
+    width: 195px;
+    padding: 4px 0;
 }
 
 .img-fluid.logo-c {
@@ -184,7 +185,7 @@ html, body {
     display: inline-block;
     text-align: center;
     bottom: 10px;
-    z-index: 998;
+    z-index: 9999999;
 }
 
 .scroll a {
@@ -744,17 +745,18 @@ html, body {
 }
 
 .job_half.job_inf {
-    margin-top: 150px;
+    margin-top: 170px;
     height: 520px;
     background: #ff8c00;
     color: #fff;
-    padding: 40px;
+    padding: 30px 40px;
     position: relative;
 }
 
 .ji_top h2 {
     font-size: 60px;
     font-weight: 700;
+    line-height: 52px;
     margin-bottom: 0;
 }
 
@@ -768,6 +770,12 @@ html, body {
     font-weight: 300;
     position: absolute;
     top: 45%;
+}
+.ji_top {
+    min-height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ji_btm {
@@ -801,7 +809,7 @@ html, body {
     display: block;
     background: transparent;
     text-align: left;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     position: relative;
     opacity: 1;
@@ -831,6 +839,8 @@ html, body {
     bottom: auto;
     top: 0;
     padding: 0 30px;
+    height: 164px;
+overflow: hidden;
 }
 
 .jobs_slider {
@@ -1083,7 +1093,7 @@ html, body {
 }
 
 .swiper-slide-active .hslide_vid {
-    right: 0;
+    right: 20px;
     opacity: 1;
 }
 
@@ -1265,7 +1275,7 @@ body:not(.fp-viewing-1) .ps_overlay {
 }
 
 .job-prev, .job-next {
-    top: 50%;
+    top: 53.5%;
     transform: translateY(-50%);
     color: #fff;
 }
@@ -1886,6 +1896,48 @@ select:-moz-focusring {
 } */
 .ssc_img:hover img.sshover {
     opacity: 1;
+}
+.hslide_left .project_logo {
+    left: 15px;
+    right: auto;
+}
+.project_logo img {
+    max-height: 46px;
+}
+.down_arrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+.down_arrow::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    transform: rotate(45deg);
+    margin: auto;
+}
+.main_header.active .img-fluid.logo-w {
+    display: inline-block;
+}
+.main_header .img-fluid.logo-c {
+    transition: all 0.3s ease-in-out;
+}
+.main_header.active .img-fluid.logo-c {
+    display: none;
+}
+.main_header.fixed.active {
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+.active .menu_text{
+    color: #fff;
+}
+.active .menu_bar span {
+    background: #fff;
 }
 /* MQ */
 

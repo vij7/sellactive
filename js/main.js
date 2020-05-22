@@ -24,7 +24,7 @@ $(document).ready(function () {
       eventsTarget: '.hslide_wrap'
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.vswiper_pagination',
       clickable: true,
     },
     on: {
@@ -66,7 +66,12 @@ $(document).ready(function () {
   new fullpage('#fullpage', {
     normalScrollElements: '.v-slider',
     fixedElements: '.main_header',
+    anchors:['hdr', 'fs1', 'fs2','fs3', 'fs4', 'fs5', 'fs6', 'fs7','fs8', 'fs9', 'fs10','fs11', 'fs12','fs13', 'fs14'],
     afterLoad: function (origin) {
+      if($('body').hasClass('fp-viewing-hdr')){
+        $('.main_header').removeClass('fixed');
+
+      }
       setTimeout(function () {
         if ($(window).width() > 1024) {
           vswiper.mousewheel.enable();
@@ -87,6 +92,10 @@ $(document).ready(function () {
       if (origin.index != 1) {
         $('.main_header').addClass('fixed');
       }
+      else if($('body').hasClass('fp-viewing-fs2')){
+        $('.main_header').addClass('fixed');
+
+      }
       else {
         $('.main_header').removeClass('fixed');
       }
@@ -103,16 +112,23 @@ $(document).ready(function () {
   });
 
 
-  $('.fp-viewing-0 .main_header').removeClass('fixed');
+  $('.fp-viewing-hdr .main_header').removeClass('fixed');
+  $('.fp-viewing-fs2 .main_header').addClass('fixed');
 
 
   // Menu toggle
   $('.menu_toggle').click(function() {
     $('.menu_wrap').toggleClass('active');
+    $('.main_header').toggleClass('active');
     $(this).toggleClass('active');
     $('.menu_text').text($('.menu_text').text() == 'MENU' ? 'CLOSE' : 'MENU');
 
   });
+
+  $('.menu_wrap a').click(function(){
+    $('.menu_wrap').removeClass('active');
+    $('.main_header').removeClass('active');
+  })
   // video actions
   $('.vid_play').click(function (e) {
     e.preventDefault();
@@ -140,8 +156,8 @@ $(document).ready(function () {
   //horizontal slider
   var hswiper = new Swiper('.hslider', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.hslide_nav .swiper-button-next',
+      prevEl: '.hslide_nav .swiper-button-prev',
     },
   });
 
@@ -154,8 +170,8 @@ $(document).ready(function () {
   var swiper = new Swiper('.job_swiper', {
     effect: 'fade',
     navigation: {
-      nextEl: '.job-next',
-      prevEl: '.job-prev',
+      nextEl: '.swiper-button-next.job-next',
+      prevEl: '.swiper-button-prev.job-prev',
     },
     pagination: {
       el: '.jobs_pagination',
