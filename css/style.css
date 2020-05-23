@@ -8,6 +8,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'queenthine';
+    src: url('fonts/thequeenthinedemo-webfont.woff2') format('woff2'),
+         url('fonts/thequeenthinedemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -1939,6 +1948,237 @@ select:-moz-focusring {
 .active .menu_bar span {
     background: #fff;
 }
+.teams_banner_slide img {
+    width: 100%;
+}
+.teams_banner_slide {
+    position: relative;
+}
+.teams_banner_slide::after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+}
+.team_wraps {
+    margin-top: 69px;
+}
+.teams_banner_cont {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    margin: auto;
+    text-align: center;
+    z-index: 10;
+}
+.founder_pc {
+    position: relative;
+}
+.dr_box {
+    width: 850px;
+    margin: auto;
+    border: 10px solid #f80;
+    display: block;
+    height: 840px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.fdr_img, .fdr_img img {
+    margin: auto;
+    text-align: center;
+}
+.fdr_img {
+    width: 600px;
+    padding-top: 240px;
+    position: relative;
+    z-index: 11;
+}
+.teams_banner_cont h2 {
+    font-size: 100px;
+    font-weight: 700;
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+}
+.founder_pc {
+    position: relative;
+    margin-top: -370px;
+    margin-bottom: 100px;
+}
+.founder_social {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -100px;
+    bottom: 0;
+}
+.founder_social img {
+    width: 50px;
+    margin-top: 10px;
+}
+.fd_inner {
+    position: relative;
+}
+.fdr_details {
+    position: absolute;
+    top: 55%;
+    z-index: 20;
+}
+.fdr_details h2 {
+    font-size: 105px;
+    font-weight: 700;
+    line-height: 130px;
+}
+.fgr_sign {
+    font-size: 110px;
+    font-family: queenthine;
+    color: #1970bc;
+    position: relative;
+    top: -95px;
+    font-weight: normal;
+}
+.team_fullcontent {
+    display: block;
+}
+.team_each_inner {
+    max-width: 1000px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.tfull_inner h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.tm_border {
+    display: inline-block;
+    width: 170px;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    right: -80px;
+    margin-top: -35px;
+}
+.tfull_inner {
+    position: relative;
+    padding: 70px 60px;
+    width: 570px;
+    background: #f80;
+    color: #fff;
+    height: 570px;
+}
+.tfull_inner h3 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+.tmc_social img {
+    width: 40px;
+    margin: 0 5px;
+}
+.tfull_inner p {
+    max-width: 390px;
+}
+.tmc_social {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.tfull_img {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    z-index: -1;
+}
+.tfull_img {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    z-index: -1;
+    width: 50%;
+}
+.tfull_title h2 {
+    font-size: 80px;
+    max-width: 600px;
+    color: #ff8300;
+    font-weight: 700;
+}
+.tfull_sign {
+    font-family: queenthine;
+    font-size: 85px;
+    color: #1b6db9;
+    position: relative;
+    z-index: 10;
+    top: -75px;
+}
+.tfull_title {
+    margin-top: 30px;
+    left: 24%;
+    position: relative;
+}
+.cnl .team_fullcontent {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.cnl .tfull_img {
+    position: relative;
+    right: auto;
+    top: 0;
+    left: 7%;
+}
+.team_each {
+    margin-bottom: 100px;
+}
+.cnl  .tfull_title h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cnl .tfull_sign {
+    position: absolute;
+    top: -55px;
+}
+.cnl .tm_border {
+    position: absolute;
+    right: auto;
+    left: -85px;
+}
+.team_each.cnl + .team_each {
+    margin-top: 200px;
+}
+.spacer {
+    height: 120px;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 99999999999;
+}
+.modal-backdrop.show {
+    z-index: 99999999;
+}
+.modal-dialog {
+    max-width: 70%;
+}
+.modal-content .close {
+    position: absolute;
+    right: 0px;
+    top: -14px;
+    font-size: 40px;
+    font-weight: 300;
+}
+*, *:focus, *:hover, *:active {
+    outline: none !important; 
+} 
 /* MQ */
 
 @media only screen and (max-width:1440px) {
@@ -2085,6 +2325,24 @@ select:-moz-focusring {
     }
     .pos_descbox {
         flex-basis: 45%;
+    }
+    .teams_banner_cont h2 {
+        font-size: 76px;
+        max-width: 80%;
+    }
+    .founder_pc {
+        margin-top: -294px;
+    }
+    .fdr_details h2 {
+        font-size: 85px;
+        line-height: 100px;
+    }
+    .fgr_sign {
+        font-size: 90px;
+        top: -55px;
+    }
+    .founder_social img {
+        width: 40px;
     }
 }
 
@@ -2280,6 +2538,93 @@ select:-moz-focusring {
     .pos_innerp {
         height: 223px;
     }  
+    .teams_banner_cont h2 {
+        font-size: 7vw;
+        font-weight: 700;
+        max-width: 80%;
+    }
+    .dr_box {
+        width: 65%;
+    }
+    .fdr_img {
+        width: 40%;
+        padding-top: 22%;
+    }
+    .founder_pc {
+        position: relative;
+        margin-top: -31%;
+    }
+    .dr_box {
+        width: 90%;
+        height: 49vw;
+    }
+    .fdr_details {
+        position: absolute;
+        top: 50%;
+    }
+    .fdr_details h2 {
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    .fgr_sign {
+        font-size: 55px;
+    }
+    .founder_social img {
+        width: 26px;
+    }
+    .founder_social {
+        left: -50px;
+    }
+    .tfull_inner {
+        width: 100%;
+        height: auto;
+    }
+    .tfull_title {
+        margin-top: 30px;
+        left: 0;
+    }
+    .team_each:not(.cnl) .tfull_img {
+        position: relative;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    .team_each:not(.cnl) .tfull_title {
+        margin-top: 30px;
+        left: 40px;
+        position: absolute;
+        bottom: 0;
+    }
+    .cnl .team_fullcontent {
+        position: relative;
+    }
+    .cnl .tfull_img {
+        left: 0;
+    }
+    .tfull_img {
+        width: 100%;
+    }
+    .cnl .tfull_title {
+        position: absolute;
+        z-index: 10;
+        top: -60%;
+        left: 40px;
+    }
+    .tfull_inner p {
+        max-width: 80%;
+    }
+    .team_each.cnl + .team_each {
+        margin-top: 100px;
+    }
+    .tfull_title h2 {
+        font-size: 50px;
+    }
+    .tfull_sign {
+        font-size: 45px;
+        top: -10px;
+    }
 }
 
 @media only screen and (max-width:800px) {
@@ -2682,6 +3027,61 @@ margin-bottom: 20px;
     .refrenz_col {
         height: 110px;
     }
+    .dr_box {
+        width: 90%;
+        height: 70vw;
+    }
+    .fdr_details h2 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .fdr_details {
+        position: absolute;
+        top: 55%;
+    }
+    .fgr_sign {
+        font-size: 30px;
+        top: -30px;
+    }
+    .fdr_img {
+        width: 70%;
+    }
+    .founder_social img {
+        width: 20px;
+    }
+    .founder_social {
+        left: -30px;
+    }
+    .tfull_inner h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .tfull_inner {
+        position: relative;
+        padding: 30px;
+    }
+    .tfull_inner h4 {
+        font-size: 16px;
+    }
+    .tm_border {
+        right: 0;
+    }
+    .tfull_inner p {
+        max-width: 100%;
+    }
+    .tmc_social {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .tmc_social img {
+        width: 20px;
+    }
+    .cnl .tm_border {
+        left: 0;
+    }
 }
 
 @media only screen and (max-width:440px) {
@@ -2935,8 +3335,16 @@ margin-bottom: 20px;
         width: 55px;
         height: 55px;
     }
+    .fixed .logo_wrap img, .inner_page .logo_wrap img {
+        width: 145px;
+        padding: 10px 0;
+    }
 }
 
-@media only screen and (max-width:400px) {}
+@media only screen and (max-width:400px) {
+    .tfull_title h2 {
+        font-size: 40px;
+    }
+}
 
 @media only screen and (max-width:360px) {}
